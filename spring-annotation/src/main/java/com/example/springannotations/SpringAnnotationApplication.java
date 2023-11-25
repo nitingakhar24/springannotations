@@ -16,6 +16,8 @@ public class SpringAnnotationApplication {
 		//System.out.println(pizzaController2.getPizza());
 		//System.out.println(pizzaController3.getPizza());
 
+		System.out.println(pizzaController.getVegPizza());
+
 	}
 
 }
