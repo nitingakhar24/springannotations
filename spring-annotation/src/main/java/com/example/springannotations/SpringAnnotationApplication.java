@@ -5,6 +5,7 @@ import com.example.springannotations.lazy.LazyLoader;
 import com.example.springannotations.scope.MyPrototypeBean;
 import com.example.springannotations.scope.MySingletonBean;
 import com.example.springannotations.service.VegPizza;
+import com.example.springannotations.value.ValueAnnotationDemo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -35,6 +36,13 @@ public class SpringAnnotationApplication {
 
 		MyPrototypeBean myPrototypeBean3 = context.getBean(MyPrototypeBean.class);
 		System.out.println(myPrototypeBean3.hashCode());
+
+
+		ValueAnnotationDemo valueAnnotationDemo = context.getBean(ValueAnnotationDemo.class);
+		System.out.println(valueAnnotationDemo.getDefaultName());
+		System.out.println(valueAnnotationDemo.getHost());
+		System.out.println(valueAnnotationDemo.getEmail());
+		System.out.println(valueAnnotationDemo.getPassword());
 
 
 
