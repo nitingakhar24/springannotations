@@ -21,7 +21,7 @@ public class PizzaController {
 
     //Uncomment this code to showcase Constructor Annotation
     @Autowired
-    public PizzaController(@Qualifier("nonVegPizza") Pizza pizza) {
+    public PizzaController(Pizza pizza) {
         this.pizza = pizza;
     }
 
