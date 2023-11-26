@@ -2,6 +2,7 @@ package com.example.springannotations;
 
 import com.example.springannotations.controller.PizzaController;
 import com.example.springannotations.lazy.LazyLoader;
+import com.example.springannotations.propertysource.PropertySourceDemo;
 import com.example.springannotations.scope.MyPrototypeBean;
 import com.example.springannotations.scope.MySingletonBean;
 import com.example.springannotations.service.VegPizza;
@@ -45,6 +46,12 @@ public class SpringAnnotationApplication {
 		System.out.println(valueAnnotationDemo.getPassword());
 
 
+		PropertySourceDemo propertySourceDemo = context.getBean(PropertySourceDemo.class);
+		System.out.println(propertySourceDemo.getEmail());
+		System.out.println(propertySourceDemo.getHost());
+		System.out.println(propertySourceDemo.getPassword());
+		System.out.println(propertySourceDemo.getAppName());
+		System.out.println(propertySourceDemo.getAppDesc());
 
 
 
