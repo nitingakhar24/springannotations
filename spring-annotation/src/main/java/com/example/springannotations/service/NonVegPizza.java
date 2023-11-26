@@ -3,9 +3,9 @@ package com.example.springannotations.service;
 import org.springframework.stereotype.Component;
 
 @Component
-public class VegPizza implements Pizza {
+public class NonVegPizza implements Pizza {
     @Override
     public String getPizza() {
-        return "Veg Pizza";
+        return "Non Veg Pizza";
     }
 }
