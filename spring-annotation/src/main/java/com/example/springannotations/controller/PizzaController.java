@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-@Component
 //@Component("myPizzaController")
 public class PizzaController {
 
@@ -20,7 +19,6 @@ public class PizzaController {
     //@Qualifier annotation is used in conjuction with Autowired to avoid confusion when we have 2 or more beans configured for the same type.
 
     //Uncomment this code to showcase Constructor Annotation
-    @Autowired
     public PizzaController(Pizza pizza) {
         this.pizza = pizza;
     }
