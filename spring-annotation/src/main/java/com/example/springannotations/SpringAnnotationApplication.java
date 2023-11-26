@@ -1,6 +1,7 @@
 package com.example.springannotations;
 
 import com.example.springannotations.controller.PizzaController;
+import com.example.springannotations.lazy.LazyLoader;
 import com.example.springannotations.service.VegPizza;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -21,6 +22,8 @@ public class SpringAnnotationApplication {
 		VegPizza vegPizzaByBeanName = (VegPizza) context.getBean("vegPizzaBean");
 		System.out.println(vegPizza.getPizza());
 		System.out.println(vegPizzaByBeanName.getPizza());
+
+		LazyLoader lazyLoader = context.getBean(LazyLoader.class);
 	}
 
 }
